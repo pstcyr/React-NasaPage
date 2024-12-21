@@ -1,0 +1,46 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Styling for the background */
+  .backgroundImage {
+    background-size: cover;         /* Proportionally fill the container */
+    background-position: center;   /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    background-image: url('./assets/BackgroundImage.jpg'); 
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+  }
+
+  .FooterWrapper {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  .Footer {
+    color:white;
+    display:flex;
+    margin: 15px 30px;
+    font-size: 35px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .InfoIcon {
+    height:35px;
+    width:35px;
+    cursor: pointer;
+  }
+
+  .Modal{
+    font-size: 50px;
+    color:green;
+  }
