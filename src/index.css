@@ -13,8 +13,8 @@
   .backgroundImage {
     background-size: cover;         /* Proportionally fill the container */
     background-position: center;   /* Center the image */
-    background-repeat: no-repeat;  /* Prevent tiling */
-    background-image: url('./assets/BackgroundImage.jpg'); 
+    background-repeat: no-repeat; /*Prevent tiling */
+    object-fit: contain;  
     height: 100vh;
     width: 100vw;
     display:flex;
@@ -32,6 +32,10 @@
     font-size: 35px;
     justify-content: space-between;
     align-items: center;
+    background-color: #090317;
+    padding: 15px;
+    border-radius: 15px;
+    opacity:0.8;
   }
 
   .InfoIcon {
@@ -42,5 +46,36 @@
 
   .Modal{
     font-size: 50px;
-    color:green;
+    color:white;
+    background-color: #090317;
+    overflow-y: auto;
+    width:400px;
+  }
+
+  .texts{
+    margin: 0px 10px;
+  }
+
+  .Title {
+    font-size: 20px;
+
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 20px;
+    color: #dddddd;
+  }
+
+  .backArrow {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .backArrowWrapper {
+    height:100vh; 
   }

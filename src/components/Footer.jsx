@@ -2,12 +2,14 @@ import React from 'react'  //Type rfc (react function component)
 import info from '../assets/info.svg'
 
 export default function Footer(props) {
-  const {handleModelOpen} = props;
+  const {handleModelOpen, modelOpen, data} = props;
 
   return (
     <div className="Footer">
-      Swirling Magnetic Field around Our Galaxy's Central Black Hole 
+      {data.title} 
+      { !modelOpen && (
       <img src={info} className="InfoIcon" onClick={()=> handleModelOpen()}></img> 
+      )}
     </div>
   )
 }
